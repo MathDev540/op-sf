@@ -1,2 +1,1 @@
-# vjx-test
-test site for website
+# VJX-BAKERY
