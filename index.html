@@ -3,73 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>OP-SF-05</title>
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const bgImage = document.querySelector(".background img");
-            const textElements = document.querySelectorAll(".text, .heading");
-        
-            // Wait until the image loads
-            bgImage.onload = function() {
-                textElements.forEach((element, index) => {
-                    setTimeout(() => {
-                        element.style.animation = "fadeUp 1s ease-out forwards";
-                    }, index * 800); // Increase this number for longer delay
-                });
-            };
-        });
-        </script>
-              
-
-    <header class="header">
-        <div class="header__content">
-            <a href="#" class="logo"><img src="images\VJX.png"></a>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Career</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">About</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="btn">Contact</a>
-                    </li>
-                </ul>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/BK.png" class="logo">
+            <nav>
+                <a href ="news.html"><img src="images\home.png" class="home"></a>
+                <a href ="news.html"><img src="images\suitcase.png" class="home"></a>
+                <a href ="news.html"><img src="images\information-button.png" class="home"></a>
+                <a href ="news.html"><img src="images\paper.png" class="home"></a>
+                <!-- <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="news.html">News</a></li>
+                </ul> -->
             </nav>
+            <img src="images/burger-bar.png" class="menu-icon">
         </div>
-    </header>
 
-    <bakground class="background">
-        <img src="images/outshotwide.jpg" class="bg1">
-    </bakground>
+        <div class="row">
+            <div class="col">
+                <h1 class="headingtxt">Boses ng Kabataan</h1>
+                <p class="body1">Pantawid sa Impormasyon ng Kinabukasan.</p>
+                <button type="button"><a href="" class="buttontxt">News</button></a>
+                
+                <section class="hero">
+                    <div class="quote">
+                        <p>"Ang kabataan ang pag-asa ng bayan."</p>
+                    </div>
+                </section>
 
-    <main class="main">
-        <h1 class="heading">VJX BAKERY</h1>
-        <p class="text">Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Officiis fugit quia quis quisquam 
-            quasi aliquid amet ab labore facere itaque dolore
-             deserunt ex, nostrum sint.
-        </p>
-
-    </main>
-
-    <footer>
-        <p class="copyrightfoot">VJX Bakery® All Rights Reserved 2024-2025.</p>
-        <p class="created">by Color Cube Studios</p>
-    </footer>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
