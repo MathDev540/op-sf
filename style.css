@@ -86,19 +86,22 @@ nav a{
     transition: color 0.3s ease;
 } 
 
+nav a,
 nav a:link,
-nav a:visited {
-  color: rgb(197, 197, 197);
+nav a:visited,
+nav a:hover,
+nav a:active {
+  color: rgb(197, 197, 197) !important;
   text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #ffcc00;
+  color: #ffcc00 !important;
 }
 
-nav a:active {
-  color: #ffffff;
-}
 .row{
     display: flex;
     height: 88%;
@@ -222,4 +225,5 @@ h5{
     font-size: 1rem;
   }
 }
+
 
