@@ -53,12 +53,7 @@
     width: 50px;
     cursor: pointer;
 }
-.home{
-    width: 30px;
-    cursor: pointer;
-    margin-left: 10px;
-    opacity: 100%;
-}
+
 .jobs{
     width: 30px;
     cursor: pointer;
@@ -72,6 +67,10 @@
 nav{
     flex: 1;
     text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.0rem;
 }
 nav ul li{
     list-style: none;
@@ -79,11 +78,13 @@ nav ul li{
     margin-left: 60px;
     size: 0cap;
 }
-nav ul li a{
+nav a{
+    color: rgb(197, 197, 197);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
     text-decoration: none;
-    color: #fff;
-    font-size: 13px;
-}
+    transition: color 0.3s ease;
+} 
 .row{
     display: flex;
     height: 88%;
