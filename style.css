@@ -85,6 +85,20 @@ nav a{
     text-decoration: none;
     transition: color 0.3s ease;
 } 
+
+nav a:link,
+nav a:visited {
+  color: rgb(197, 197, 197);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+nav a:active {
+  color: #ffffff;
+}
 .row{
     display: flex;
     height: 88%;
@@ -208,3 +222,4 @@ h5{
     font-size: 1rem;
   }
 }
+
